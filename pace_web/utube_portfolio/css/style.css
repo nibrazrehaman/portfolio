@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar{
+    background: white;
+}
+
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: white;
+    background: black;
+}
+
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/* main section  */
+
+.main{
+    background: url(../nibraz_home.jpeg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    color: white;
+}
+
+.main h4{
+    font-size: 3rem;
+    font-weight: normal;
+}
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+
+.main h5{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    
+}
+
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background: red;
+    color: white;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.main .bt1:hover{
+    background: rgb(114, 12, 12);
+    transition: 0.5s;
+}
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    background: transparent;
+    color: red;
+    outline: none;
+    border:1px solid red;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+}
+.main .bt2:hover{
+    background: red;
+    color: white;
+    transition: 0.5s;
+}
+.about img{
+    box-shadow: 10px 9px 5px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 9px 5px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 9px 5px 2px rgba(0,0,0,0.75);
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.progress{
+    background: rgb(218, 214, 214);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+}
+
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background: black;
+    border-radius: 4px;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn1:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.btn2{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background: white;
+    border-radius: 4px;
+    color: black;
+}
+
+.btn2:hover{
+    background: black;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.card{
+    border: none;
+    outline: none;
+    box-shadow: 9px 3px 132px -4px rgba(0,0,0,0.5);
+-webkit-box-shadow: 9px 3px 132px -4px rgba(0,0,0,0.5);
+-moz-box-shadow: 9px 3px 132px -4px rgba(0,0,0,0.5);
+}
+.card p{
+color: grey;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    background: lightgrey;
+    color: black;
+    padding: 12px;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card:hover  .circle{
+    background: black;
+    color: white;
+    transition:0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:white;
+}
+
+@media screen  and (min-width:992px){
+    .main{
+background-size: cover;
+/* object-position: 50% 50%;
+ */
+ background-position: left 5%;
+
+ object-fit: cover;
+    }
+}
+
+
+.skill{
+    width: 500px;
+    margin: 10px auto;
+    color: black;
+    padding: 8px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.skill li{
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bar span{
+    height: 20px;
+    float:left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+
+.docker{
+    width: 80%;
+    animation: docker 3s;
+}
+.git{
+    width: 70%;
+    animation: git 3s;
+}
+.k8s{
+    width: 60%;
+    animation: k8s 3s;
+}
+.java{
+    width: 70%;
+    animation: java 3s;
+}
+.mysql{
+    width: 80%;
+    animation: mysql 3s;
+}
+
+
+@keyframes docker {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes git {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes k8s {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes  java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes mysql {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
