@@ -1,0 +1,105 @@
+a{
+    text-decoration: none !important;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen  and (max-width:992px){
+.contact{
+    font-size: 1.8vw;
+    h4{
+        font-size: 2.5vw;
+    }
+}
+}
+.intro-container {
+    background: url(../images/bg-01.jpg) no-repeat;
+    background-size: cover;
+
+    .row{
+        background-color: rgba(20, 20, 21, 0.445);
+        
+    }
+}
+.horiz{
+    border-width: 2px;
+    width: 10%;
+    color: rgb(60, 42, 153);
+
+}
+
+.contact-container{
+    background: url(../images/bg-02.jpg);
+    background-size: cover;
+    .row{
+        position: relative;
+        .frstcol{
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .scndcol{
+            position: absolute;
+            width: 40%;
+          right: 40px;
+          top:50px;
+          box-shadow: -11px 10px 24px 0px rgba(0,0,0,0.56);
+          -webkit-box-shadow: -11px 10px 24px 0px rgba(0,0,0,0.56);
+          -moz-box-shadow: -11px 10px 24px 0px rgba(0,0,0,0.56);
+        }
+        .thrdcol{
+            opacity: 0.8;
+           
+        }
+        
+    }
+    
+}
+
+.ketaminecol1{
+    background-color: rgba(35, 35, 119, 0.884);
+}
+.col2{
+    background: rgba(128, 128, 128, 0.584);
+}
+.about-row{
+
+z-index: 4;
+background: white;
+}
+.footer_section{
+    background: rgb(36, 36, 99);
+    height: 200px;
+}
+
+.about-container{
+    position: relative;
+    
+}
+
+.pic{
+    position: absolute;
+    right: 70px;
+    top: -120px;
+    z-index: 2;
+}
+li{
+    list-style-type: none;
+}
+
+.blurr{
+    height: 78%;
+    width:88%;
+    background: grey;
+    position: absolute;
+    top:105px;
+    margin-left: 100px;
+}
+
+.frstcol{
+    opacity: 0.8;
+}
+
+.last{
+    background: url(../images/pic2.jpg) ;
+    background: contain;
+}
